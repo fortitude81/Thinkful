@@ -1,0 +1,14 @@
+unfinished
+----------------
+var sentence = "I am happy you are reading this sentence";
+var c = sentence.length;
+
+
+function WordCount(str){
+return str.split(" ").length;
+}
+var average = (c/WordCount);
+
+alert("The string contains " + (WordCount(sentence)) + " words." + " The average length of each word is " + average + " characters.");
+
+
