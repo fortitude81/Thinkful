@@ -1,14 +1,25 @@
-unfinished
-----------------
-var sentence = "I am happy you are reading this sentence";
-var c = sentence.length;
+var myString = "I am happy you are reading this sentence";
 
+var stringTool = function (myString) {
 
-function WordCount(str){
-return str.split(" ").length;
-}
-var average = (c/WordCount);
+	var lengthOfString = function(myString) {
 
-alert("The string contains " + (WordCount(sentence)) + " words." + " The average length of each word is " + average + " characters.");
+  		return myString.split(" ").length;
+	}
 
+	var avgCharacters = function(myString) {
+  		var words = myString.split(" ");
+  		var average = 0
+  		var total = 0;
+
+  		for (var i = 0; i < words.length; i++) {
+    		total = total + words[i].length;
+ 	 	}
+
+  		average = total / words.length;
+  		return average;
+		}
+
+		alert ("This string has "+ lengthOfString(myString) + " words. The average length of each word is " + avgCharacters(myString) + " characters");
+	}
 
