@@ -1,25 +1,25 @@
 var myString = "I am happy you are reading this sentence";
 
-var stringTool = function (myString) {
-
-	var lengthOfString = function(myString) {
-
-  		return myString.split(" ").length;
+function lengthOfString(myString){
+    return myString.split(" ").length;
 	};
 
-	var avgCharacters = function(myString) {
-  		var words = myString.split(" ");
-  		var average = 0;
-  		var total = 0;
+function checkAverage(myString){
+    
 
-  		for (var i = 0; i < words.length; i++) {
-    		total = total + words[i].length;
- 	 	}
+  	var words = myString.split(" ");
+  	var average = 0;
+  	var total = 0;
 
+  	for (var i = 0; i < words.length; i++) {
+    	total = total + words[i].length;
+		}
+        
   		average = total / words.length;
   		return average;
 		};
+		
 
-		alert ("This string has "+ lengthOfString(myString) + " words. The average length of each word is " + avgCharacters(myString) + " characters");
-	};
+		alert ("This string has "+ lengthOfString(myString) + " words. The average length of each word is " + checkAverage(myString) + " characters");
+	
 
